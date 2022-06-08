@@ -25,6 +25,10 @@ public class CardTrickICE1 {
         Scanner input = new Scanner(System.in);
         Random rdm = new Random();
         boolean hiddencard = true;
+        Card luckyCard = new Card();
+        luckyCard.setValue(8);
+        luckyCard.setSuits("diamonds");
+        
         for (int i = 0; i < magicHand.length; i++) {
             Card c1 = new Card();
             int randomcard = rdm.nextInt(12-1) + 1;
